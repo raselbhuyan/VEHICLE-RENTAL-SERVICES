@@ -1,0 +1,22 @@
+<?php
+include 'data.php';
+$sql=mysqli_query($conn,"SELECT * FROM user_details");
+	
+	 while($row=mysqli_fetch_array($sql))
+	 {
+		if($row['USERID']!="baibhab1234")
+		{
+		echo "NAME:".$row['NAME'];
+		echo "<br>USERID:".$row['USERID'];
+		echo "<br>EMAIL:".$row['EMAIL'];
+		echo "<br>ADDRESS:".$row['ADDRESS'];
+		echo "<br>V_TYPE:".$row['V_TYPE'];
+		echo "<hr>";
+	 }
+	 }
+?>
+<html>
+<body>
+
+</body>
+</html>

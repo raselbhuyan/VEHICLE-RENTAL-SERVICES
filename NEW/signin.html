@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Sign In</title>
+<link rel="stylesheet" href="signup_c.css">
+<script>  
+function validateform(){  
+
+var userid=document.myform2.field8.value;  
+var password=document.myform2.field7.value;
+if(userid==null || userid=="")
+{
+	alert("Userid cant be blank");
+	return false;
+}
+else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }
+	
+}
+</script>  
+</head>
+<body>
+<h1 style="color: white;text-decoration: underline;text-align: center;background: #1abc9c;font-size: 30px;"><center>VEHICLE RENTAL SERVICES</center></h1>
+<h2 class="sign"><center>Sign IN</center></h2>
+<br>
+<form action="signin_p.php" name="myform2" method="POST" onsubmit="return validateform()">
+<center>
+<ul class="form-style-1" style="border-style: solid;">
+    
+	<li>
+		<label>User ID<span class="required"></span></label>
+		<input type="text" name="field8" class="field-long" >
+	</li>
+	<li>
+		<label>Password<span class="required"></span></label>
+		<input type="password" name="field7" class="field-long" >
+	</li>
+	
+    <li>
+        <input type="submit" value="Sign In" />
+    </li>
+	
+</ul>
+</form>
+	<p>New User?Please click <a href="signup.html">here</a>
+</center>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<footer style="background: #1abc9c;
+	color: #fff;
+	border: 1px solid #257C9E;">
+	<b>
+ <p style="color: #b20b00; font-size: 14pt;">Maintained by: Chintan Nayak(1906021),Shreya Singh(1906061),MD.Rasel Bhuyan(1906236),Gaurav Kumar(1906664))</p>
+  <p style="color: #b20b00;font-size: 14pt;">Contact information:</b> <a href="mailto:chintannayak15@gmail.com" onMouseOver="this.style.color='black' "onMouseOut="this.style.color='blue'">chintannayak15@gmail.com</a>
+  ,<a href="mailto:raselcu.75@gmail.com" onMouseOver="this.style.color='black' "onMouseOut="this.style.color='blue'">raselcu.75@gmail.com</a>
+  ,<a href="mailto:savagesnowboy@gmail.com" onMouseOver="this.style.color='black' "onMouseOut="this.style.color='blue'">savagesnowboy@gmail.com</a>
+  ,<a href="mailto:shreyasinghh1@gmail.com" onMouseOver="this.style.color='black' "onMouseOut="this.style.color='blue'">shreyasinghh1@gmail.com</a></p>
+	
+</footer>
+</body>
+</html>

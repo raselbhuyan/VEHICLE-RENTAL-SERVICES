@@ -1,0 +1,15 @@
+
+<?php
+include 'data.php';
+$sql=mysqli_query($conn,"SELECT * FROM vehicledetails");
+	
+	 while($r=mysqli_fetch_array($sql))
+	 {
+		 
+		
+		echo $r['USERID'];
+		echo "<br><b>VEHICLE NAME</b>:".$r['V_NAME'];
+		echo '<hr color="green">';
+	 }
+	 }
+?>

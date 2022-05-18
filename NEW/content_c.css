@@ -1,0 +1,21 @@
+<style type="text/css">
+p
+{
+	font-size: 16pt;
+	color: cyan;
+}
+body
+{
+		background: #F7F7F7;
+		 background-image: url('1140x425-lvl3_masthead-car_rental.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+footer
+{
+	background: #1abc9c;
+}
+
+
+</style>
